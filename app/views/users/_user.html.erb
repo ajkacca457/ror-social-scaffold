@@ -1,6 +1,4 @@
-<li>
-  Name: <%= user.name %>
-  <span class="profile-link">
-    <%= link_to 'See Profile',  user_path(user), class: 'profile-link' %>
-  </span>
+<li class="li-item">
+  <%= user.name %>
+    <%= link_to 'See Profile',  user_path(user), class:'profile-link' %>
 </li>

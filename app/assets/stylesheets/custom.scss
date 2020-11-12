@@ -5,6 +5,8 @@ $primary-color: #8bc34a;
 $primary-color-light: #dcedc8;
 $primary-color-text: #212121;
 $divider-color: #bdbdbd;
+$btnbg1-color: #33A1DE;
+$btnbg2-color: #bdbdbd;
 
 * {
   margin: 0;
@@ -286,9 +288,10 @@ form {
   }
 
   .profile-link {
-    font-size: 0.8em;
-    margin: 0 0 8px 0;
-    color: $primary-color-dark;
+    font-size: 0.9em;
+    color: white;
+    background-color: $btnbg1-color;
+    padding: 5px 10px;
   }
 }
 
@@ -346,4 +349,14 @@ form {
   .user-section {
     width: 50%;
   }
+}
+
+.li-item {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  background-color: rgba(72, 245, 46, 0.30);
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 5px;
 }
