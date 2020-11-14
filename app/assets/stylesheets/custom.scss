@@ -159,7 +159,7 @@ form {
     }
 
     input[type="checkbox"] {
-      width:5%;
+      width: 5%;
     }
   }
 
@@ -294,6 +294,7 @@ form {
     padding: 5px 10px;
   }
 }
+
 .button-green {
   font-size: 0.9em;
   color: white;
@@ -394,11 +395,13 @@ form {
 .m-2 {
   margin: 15px 0;
 }
-.flex{
+
+.flex {
   width: 12%;
   display: flex;
   justify-content: space-between;
 }
+
 .ml {
   margin-left: 5px;
 }

@@ -3,23 +3,20 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_permitted_parameters, if: :devise_controller?
   helper_method :search_friendship
-  
+
   def search_friendship(user_id, friend_id)
     return if user_id == friend_id
 
     friendship = Friendship.find_by(user_id: user_id, friend_id: friend_id)
 
-  if friendship.nil?
-    friendship = Friendship.find_by(user_id: friend_id, friend_id: user_id)
-  end
+    friendship = Friendship.find_by(user_id: friend_id, friend_id: user_id) if friendship.nil?
 
     if friendship.nil?
-      return nil
+      nil
     else
-      return friendship.id
+      friendship.id
     end
   end
-
 
   protected
 
