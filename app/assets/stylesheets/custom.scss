@@ -294,3 +294,111 @@ form {
     padding: 5px 10px;
   }
 }
+.button-green {
+  font-size: 0.9em;
+  color: white;
+  background-color: #42b86d;
+  padding: 5px 10px;
+}
+
+.button-red {
+  font-size: 0.9em;
+  color: white;
+  background-color: #f99;
+  padding: 5px 10px;
+}
+
+.user-section {
+  width: 100%;
+  margin-left: 16px;
+
+  h2 {
+    text-transform: capitalize;
+  }
+
+  .timeline {
+    width: 100%;
+
+    h3 {
+      width: 100%;
+    }
+
+    justify-content: start;
+  }
+}
+
+#error_explanation {
+  h2 {
+    color: $primary-color-text;
+    font-size: 1em;
+  }
+
+  ul {
+    color: #f00;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  form {
+    width: 60%;
+  }
+
+  .new_post,
+  .timeline,
+  .users-section,
+  .user-section {
+    width: 70%;
+  }
+}
+
+@media (min-width: 780px) {
+  form {
+    width: 40%;
+  }
+
+  .new_post,
+  .timeline,
+  .users-section,
+  .user-section {
+    width: 50%;
+  }
+}
+
+.li-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(72, 245, 46, 0.3);
+  padding: 10px 15px;
+  margin: 10px 0;
+}
+
+.section-2 {
+  width: 50%;
+  text-align: center;
+}
+
+.p-link {
+  font-size: 0.9em;
+  color: white;
+  background-color: $btnbg1-color;
+  padding: 5px 10px;
+}
+
+.mt {
+  margin-top: 15px;
+  background-color: #b9e3b0;
+  padding: 10px;
+}
+
+.m-2 {
+  margin: 15px 0;
+}
+.flex{
+  width: 12%;
+  display: flex;
+  justify-content: space-between;
+}
+.ml {
+  margin-left: 5px;
+}
