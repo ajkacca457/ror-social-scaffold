@@ -2,6 +2,6 @@
 <%= user.name %>
 <div>
     <%= link_to 'See Profile',  user_path(user), class: 'profile-link' %>
-    
+    <%= render_friendship_btn user%>  
 </div>
 </li>
