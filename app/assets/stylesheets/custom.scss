@@ -5,7 +5,7 @@ $primary-color: #8bc34a;
 $primary-color-light: #dcedc8;
 $primary-color-text: #212121;
 $divider-color: #bdbdbd;
-$btnbg1-color: #33A1DE;
+$btnbg1-color: #33a1de;
 $btnbg2-color: #bdbdbd;
 
 * {
@@ -159,7 +159,7 @@ form {
     }
 
     input[type="checkbox"] {
-      width: 100%;
+      width:5%;
     }
   }
 
@@ -234,7 +234,7 @@ form {
     float: right;
 
     a {
-      color: $primary-color-dark;
+      color: white;
       font-weight: bold;
       font-size: 0.9em;
       margin: 0 4px;
@@ -293,70 +293,4 @@ form {
     background-color: $btnbg1-color;
     padding: 5px 10px;
   }
-}
-
-.user-section {
-  width: 100%;
-  margin-left: 16px;
-
-  h2 {
-    text-transform: capitalize;
-  }
-
-  .timeline {
-    width: 100%;
-
-    h3 {
-      width: 100%;
-    }
-
-    justify-content: start;
-  }
-}
-
-#error_explanation {
-  h2 {
-    color: $primary-color-text;
-    font-size: 1em;
-  }
-
-  ul {
-    color: #f00;
-  }
-}
-
-@media only screen and (min-width: 480px) {
-  form {
-    width: 60%;
-  }
-
-  .new_post,
-  .timeline,
-  .users-section,
-  .user-section {
-    width: 70%;
-  }
-}
-
-@media (min-width: 780px) {
-  form {
-    width: 40%;
-  }
-
-  .new_post,
-  .timeline,
-  .users-section,
-  .user-section {
-    width: 50%;
-  }
-}
-
-.li-item {
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-  background-color: rgba(72, 245, 46, 0.30);
-  padding: 10px 0;
-  margin: 10px 0;
-  border-radius: 5px;
 }
