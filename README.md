@@ -3,7 +3,7 @@
 > This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
 
 
-[screenshot](./app/assets/images/interface.png)
+![screenshot](./app/assets/images/interface.png)
 
 ## Built With
 
