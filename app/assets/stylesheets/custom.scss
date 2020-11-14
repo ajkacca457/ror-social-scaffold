@@ -5,6 +5,8 @@ $primary-color: #8bc34a;
 $primary-color-light: #dcedc8;
 $primary-color-text: #212121;
 $divider-color: #bdbdbd;
+$btnbg1-color: #33a1de;
+$btnbg2-color: #bdbdbd;
 
 * {
   margin: 0;
@@ -157,7 +159,7 @@ form {
     }
 
     input[type="checkbox"] {
-      width: 100%;
+      width: 5%;
     }
   }
 
@@ -232,7 +234,7 @@ form {
     float: right;
 
     a {
-      color: $primary-color-dark;
+      color: white;
       font-weight: bold;
       font-size: 0.9em;
       margin: 0 4px;
@@ -286,10 +288,25 @@ form {
   }
 
   .profile-link {
-    font-size: 0.8em;
-    margin: 0 0 8px 0;
-    color: $primary-color-dark;
+    font-size: 0.9em;
+    color: white;
+    background-color: $btnbg1-color;
+    padding: 5px 10px;
   }
+}
+
+.button-green {
+  font-size: 0.9em;
+  color: white;
+  background-color: #42b86d;
+  padding: 5px 10px;
+}
+
+.button-red {
+  font-size: 0.9em;
+  color: white;
+  background-color: #f99;
+  padding: 5px 10px;
 }
 
 .user-section {
@@ -346,4 +363,51 @@ form {
   .user-section {
     width: 50%;
   }
+}
+
+.li-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(72, 245, 46, 0.3);
+  padding: 10px 15px;
+  margin: 10px 0;
+}
+
+.section-2 {
+  width: 50%;
+  text-align: center;
+}
+
+.p-link {
+  font-size: 0.9em;
+  color: white;
+  background-color: $btnbg1-color;
+  padding: 5px 10px;
+}
+
+.mt {
+  margin-top: 15px;
+  background-color: #b9e3b0;
+  padding: 10px;
+}
+
+.m-2 {
+  margin: 15px 0;
+}
+
+.flex {
+  width: 12%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ml {
+  margin-left: 5px;
+}
+
+.likescount {
+  background-color: $btnbg1-color;
+  padding: 5px 10px;
+  color: white;
 }
