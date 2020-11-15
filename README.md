@@ -3,7 +3,7 @@
 > This is a Microverse Ruby on rails project that try to create a mini social media. The  main aim of this project was to create a social media app that user can use to create friendships, posts, comments and likes. This project has  many to many associations. It uses devise gem for authentication and it also has functionalities of sending friendship requests to
 multiple individuals.  
 
-![screenshot](./app/assets/images/interface1.png)
+![screenshot](./app/assets/images/interface.png)
 
 ## Features
 In this project I tried to add functionalities in a given social media ruby on rails app template:
