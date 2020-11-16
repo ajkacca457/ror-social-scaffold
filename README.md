@@ -4,6 +4,8 @@
 multiple individuals.  
 
 ![screenshot](./app/assets/images/interface.png)
+![screenshot](./app/assets/images/interface2.png)
+![screenshot](./app/assets/images/interface3.png)
 
 ## Features
 In this project I tried to add functionalities in a given social media ruby on rails app template:

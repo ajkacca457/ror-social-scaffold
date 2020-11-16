@@ -22,3 +22,10 @@ module UserHelper
     end
   end
 end
+
+def render_request_btn(user)
+
+
+
+
+end
