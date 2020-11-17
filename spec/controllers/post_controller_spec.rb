@@ -1,18 +1,19 @@
 require 'rails_helper'
 
 # rspec spec/views/user_spec.rb
-RSpec.describe 'send request', type: :system do
-  let(:test_friend) { User.create(name: 'Friend1', email: 'friend1@example.com', password: 'friend1') }
+RSpec.describe 'Create post', type: :system do
   let(:test_user) { User.create(name: 'User Test', email: 'user@example.com', password: 'password') }
 
-  describe 'Friend request' do
-    it 'shows there is a add friend option' do
+  describe 'create post' do
+    it 'path is correct' do
+      test_user
       visit('/')
       fill_in('user[email]', with: 'user@example.com')
       fill_in('user[password]', with: 'password')
       click_button('Log in')
-      click_link('Friend Requests')
-      expect(page).to have_content('Remove')
+      fill_in('post[content]', with: 'this is an example post')
+      click_button('Save')
+      click_link('Like!', match: :first)
     end
   end
 end
