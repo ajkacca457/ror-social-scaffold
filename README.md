@@ -7,6 +7,12 @@ multiple individuals.
 ![screenshot](./app/assets/images/interface2.png)
 ![screenshot](./app/assets/images/interface3.png)
 
+
+## Live Demo
+
+[Social Media](https://serene-beyond-10770.herokuapp.com/posts)
+
+
 ## Features
 In this project I tried to add functionalities in a given social media ruby on rails app template:
 
