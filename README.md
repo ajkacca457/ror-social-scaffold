@@ -1,61 +1,60 @@
 # Scaffold for social media app with Ruby on Rails
 
-> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
+> This is a Microverse Ruby on rails project that try to create a mini social media. The  main aim of this project was to create a social media app that user can use to create friendships, posts, comments and likes. This project has  many to many associations. It uses devise gem for authentication and it also has functionalities of sending friendship requests to
+multiple individuals.  
 
-## Built With
+![screenshot](./app/assets/images/interface.png)
+![screenshot](./app/assets/images/interface2.png)
+![screenshot](./app/assets/images/interface3.png)
 
-- Ruby v2.7.0
-- Ruby on Rails v5.2.4
 
 ## Live Demo
 
-TBA
+[Social Media](https://serene-beyond-10770.herokuapp.com/posts)
 
 
-## Getting Started
+## Features
+In this project I tried to add functionalities in a given social media ruby on rails app template:
 
-To get a local copy up and running follow these simple example steps.
+- The back end is set up with User,post,comments, sessions and friendship models that validates presence of name,password,post,comments,likes and friendship. These models also contains different associations between each other.
+- Devise gem was used in session authentication.
+- If user check the page without being authenticated, he/she will not be able to see the home page or can use any functionalities.
+- Any user who signed up and logged in can create their own post.
+- Any user who signed up and logged in can send and accept friendship requests.
+- Any user who signed up and logged in can delete and remove friendship requests.
+- User show page displays post description with number of likes and with comments made by other users.
+- User can give like to the posts of other users.
+- User can see his or her list of users.
 
-### Prerequisites
+## Built With
 
-Ruby: 2.6.3
-Rails: 5.2.3
-Postgres: >=9.5
+- Ruby on Rails
+- Ruby
+- Rubocop
+- Atom text editor
+- Devise
+- Will paginate gem
+- Rspec gem
+- Capybara gem
 
-### Setup
+# Getting Started
 
-Instal gems with:
-
-```
-bundle install
-```
-
-Setup database with:
-
-```
-   rails db:create
-   rails db:migrate
-```
-
-### Github Actions
-
-To make sure the linters' checks using Github Actions work properly, you should follow the next steps:
-
-1. On your recently forked repo, enable the GitHub Actions in the Actions tab.
-2. Create the `feature/branch` and push.
-3. Start working on your milestone as usual.
-4. Open a PR from the `feature/branch` when your work is done.
-
-
-### Usage
-
-Start server with:
+To get a local copy of the repository please run the following commands on your terminal:
 
 ```
-    rails server
+$ cd <folder>
 ```
 
-Open `http://localhost:3000/` in your browser.
+```bash
+$ git clone `https://github.com/ajkacca457/ror-social-scaffold.git`
+$ cd ror-social-scaffold.git
+$ bundle install
+$ yarn install --check-files if yarn is not updated
+$ Run `rails db:create` to create database
+$ Run `rails db:migrate` to create necessary tables in database
+$ Run `rails server` to see the user interface.
+$ Open your browser and go to http://localhost:3000/
+```
 
 ### Run tests
 
@@ -63,31 +62,20 @@ Open `http://localhost:3000/` in your browser.
     rpsec --format documentation
 ```
 
-> Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
+# Authors
 
-### Deployment
+👤 **Avijit Karmaker**
 
-TBA
-
-## Authors
-
-TBA
+- Github: [@Avijit](https://github.com/ajkacca457)
+- Linkedin:[@Avijit](https://www.linkedin.com/in/avijit-karmaker-8738a54)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-TBA
-
-## 📝 License
-
-TBA
-
+## Copyright
+This is a project developed by Microverse Student as the part of skill curriculum.
