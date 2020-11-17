@@ -15,17 +15,16 @@ module UserHelper
               method: :delete, class: 'button-red'
 
     elsif current_user.already_friend?(user)
-      capture do
-        link_to 'Delete Request', friendship_path(delete_param),
-                method: :delete, class: 'button-red'
+
+      link =capture {link_to 'Delete Request', friendship_path(delete_param),
+                method: :delete, class: 'button-red'}
+      link<< capture {link_to 'request pending..', friendship_path(current_user), class: 'button-orange'}
       end
     end
   end
-end
+
 
 def render_request_btn(user)
-
-
 
 
 end
